@@ -29,7 +29,12 @@ import {Pagination} from "element-ui";
 import {Dialog} from "element-ui";
 //导入弹框组件
 import {MessageBox} from "element-ui";
-
+//导入标签组件
+import {Tag} from "element-ui";
+//导入树形组件
+import {Tree} from "element-ui";
+//导入选择器组件
+import {Select, Option} from "element-ui";
 
 //注册组件
 Vue.use(Button)
@@ -54,6 +59,10 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 
 
 //将Message组件挂载到Vue原型上
