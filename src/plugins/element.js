@@ -35,6 +35,8 @@ import {Tag} from "element-ui";
 import {Tree} from "element-ui";
 //导入选择器组件
 import {Select, Option} from "element-ui";
+//导入级联选择器
+import {Cascader} from "element-ui";
 
 //注册组件
 Vue.use(Button)
@@ -63,6 +65,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 
 
 //将Message组件挂载到Vue原型上
