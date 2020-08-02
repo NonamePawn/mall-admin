@@ -74,7 +74,6 @@
               checkStrictly: true
             }"
             clearable
-
             @change="ParentCatChanged"
           ></el-cascader>
         </el-form-item>
