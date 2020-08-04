@@ -41,6 +41,12 @@ import {Cascader} from "element-ui";
 import {Alert} from "element-ui";
 //导入标签页
 import {Tabs, TabPane} from "element-ui";
+//导入步骤条组件
+import {Steps, Step} from "element-ui";
+//导入多选框
+import {Checkbox, CheckboxGroup} from "element-ui";
+//导入上传组件
+import {Upload} from "element-ui";
 
 //注册组件
 Vue.use(Button)
@@ -73,6 +79,11 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Upload)
 
 
 //将Message组件挂载到Vue原型上
