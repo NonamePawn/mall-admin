@@ -47,6 +47,8 @@ import {Steps, Step} from "element-ui";
 import {Checkbox, CheckboxGroup} from "element-ui";
 //导入上传组件
 import {Upload} from "element-ui";
+//导入时间线组件
+import {Timeline, TimelineItem} from "element-ui";
 
 //注册组件
 Vue.use(Button)
@@ -84,6 +86,8 @@ Vue.use(Step)
 Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 
 
 //将Message组件挂载到Vue原型上
