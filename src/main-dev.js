@@ -4,6 +4,8 @@ import router from './router'
 import './plugins/element.js'
 import axios from 'axios'
 import TreeTable from 'vue-table-with-tree-grid'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 //导入文本编辑器
 import VueQuillEditor from 'vue-quill-editor'
 //导入文本编辑器的样式
@@ -16,7 +18,12 @@ Vue.use(VueQuillEditor, /* { default global options } */)
 axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/'
 //配置请求拦截器
 axios.interceptors.request.use(configs => {
+  NProgress.start()
   configs.headers.Authorization = window.sessionStorage.getItem('token')
+  return configs
+})
+axios.interceptors.response.use(configs => {
+  NProgress.done()
   return configs
 })
 //将axios挂载到Vue原型上
